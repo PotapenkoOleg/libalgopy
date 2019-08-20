@@ -1,4 +1,7 @@
-class PriorityQueueBase:
+from common.interfaces.priority_queue import PriorityQueueBase
+
+
+class ArrayBinaryHeap(PriorityQueueBase):
     def insert(self, item):
         pass
 
