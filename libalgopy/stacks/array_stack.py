@@ -1,7 +1,7 @@
-from common.interfaces.stack import Stack
+from common.interfaces.stack import StackBase
 
 
-class ArrayStack(Stack):
+class ArrayStack(StackBase):
 
     # region Init
 
