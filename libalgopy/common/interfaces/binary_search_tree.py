@@ -1,4 +1,4 @@
-class BinarySearchTree():
+class BinarySearchTreeBase:
     def add(self, key, value):
         pass
 

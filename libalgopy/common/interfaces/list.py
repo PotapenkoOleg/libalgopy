@@ -1,4 +1,4 @@
-class ListBase():
+class ListBase:
     def add_at_position(self, key, value, position):
         pass
 

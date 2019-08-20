@@ -1,4 +1,4 @@
-class PriorityQueue():
+class PriorityQueueBase:
     def insert(self, item):
         pass
 

@@ -1,4 +1,4 @@
-class HashTable():
+class HashTableBase:
     def add(self, key, value):
         pass
 
