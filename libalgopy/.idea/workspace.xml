@@ -5,6 +5,14 @@
       <change afterPath="$PROJECT_DIR$/lists/double_linked_list.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lists/single_linked_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/interfaces/binary_search_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/interfaces/binary_search_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/interfaces/hash_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/interfaces/hash_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/interfaces/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/interfaces/list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/interfaces/priority_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/interfaces/priority_queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/interfaces/queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/interfaces/queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/interfaces/stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/interfaces/stack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stacks/array_stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/stacks/array_stack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stacks/linked_list_stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/stacks/linked_list_stack.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

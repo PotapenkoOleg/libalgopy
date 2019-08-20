@@ -1,7 +1,7 @@
-from common.interfaces.stack import Stack
+from common.interfaces.stack import StackBase
 
 
-class LinkedListStack(Stack):
+class LinkedListStack(StackBase):
     # region Node Class
 
     class LinkedListNode:
