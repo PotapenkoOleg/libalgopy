@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6be1f661-4a20-4536-b817-dfc33733f48d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stacks/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stacks/array_stack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stacks/linked_list_stack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/stacks/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/stacks/test_array_stack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/stacks/test_linked_list_stack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lists/double_linked_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lists/single_linked_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
