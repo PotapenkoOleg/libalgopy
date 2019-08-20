@@ -1,4 +1,7 @@
-class LinkedListQueue():
+from common.interfaces.queue import QueueBase
+
+
+class LinkedListQueue(QueueBase):
     def enqueue(self, item):
         pass
 

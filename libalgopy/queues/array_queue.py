@@ -1,4 +1,7 @@
-class ArrayQueue():
+from common.interfaces.queue import QueueBase
+
+
+class ArrayQueue(QueueBase):
     def enqueue(self, item):
         pass
 
