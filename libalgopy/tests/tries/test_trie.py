@@ -143,7 +143,21 @@ class TestsTrie(TestCase):
         self.assertFalse(actual)
 
     def test_get_size(self):
-        self.fail()
+        symbol_table = fill_symbol_table()
+
+        expected = 8
+        actual = symbol_table.get_size()
+        self.assertEqual(expected, actual)
+
+        symbol_table.delete("by")
+        expected = 7
+        actual = symbol_table.get_size()
+        self.assertEqual(expected, actual)
+
+        symbol_table.clear()
+        expected = 0
+        actual = symbol_table.get_size()
+        self.assertEqual(expected, actual)
 
     def test_get_all_keys(self):
         self.fail()
