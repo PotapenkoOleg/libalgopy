@@ -18,12 +18,12 @@ class Trie(SymbolTable):
             self.__value = value
 
         @property
-        def next_level(self):
-            return self.__nextLevel
+        def next_level(self, index):
+            return self.__nextLevel[index]
 
         @next_level.setter
-        def next_level(self, value):
-            self.__nextLevel = value
+        def next_level(self, value, next_node):
+            self.__nextLevel[value] = next_node
 
     # endregion
 
@@ -36,23 +36,26 @@ class Trie(SymbolTable):
 
     # region Public Methods
 
-    def put(self, key, value):
-        raise NotImplementedError
-
     def get(self, key):
-        raise NotImplementedError
+        node = self.__get(self.__root, key, 0)
+        if node is None:
+            return None
+        return node.value
+
+    def put(self, key, value):
+        self.__root = self.__put(self.__root, key, value, 0)
 
     def delete(self, key):
-        raise NotImplementedError
+        self.__delete(self.__root, key, 0)
 
     def contains(self, key):
-        raise NotImplementedError
+        return self.__get(key) is not None
 
     def clear(self):
-        raise NotImplementedError
+        self.__root = Trie.Node()
 
     def is_empty(self):
-        raise NotImplementedError
+        return self.__is_level_empty(self.__root)
 
     def get_size(self):
         raise NotImplementedError
@@ -72,6 +75,33 @@ class Trie(SymbolTable):
     # endregion
 
     # region Private Methods
+
+    def __get(self, node, key, level_counter):
+        if node is None:
+            return None
+        if level_counter == len(key):
+            return node
+        index = key[level_counter]
+        next_level = node.next_level(index)
+        return self.__get(next_level, key, level_counter + 1)
+
+    def __put(self, node, key, value, level_counter):
+        if node is None:
+            node = Trie.Node()
+        if level_counter == len(key):
+            node.value = value
+            return node
+        index = key[level_counter]
+        next_level = node.next_level(index)
+        next_node = self.__put(next_level, key, value, level_counter + 1)
+        node.next_level(index, next_node)
+        return node
+
+    def __delete(self, node, key, level_counter):
+        pass
+
+    def __is_level_empty(self, level):
+        return len(level.next_level) > 0
 
     # endregion
 
