@@ -3,7 +3,7 @@ from unittest import TestCase
 from tries.trie import Trie
 
 
-def fill_symbol_table():
+def init_symbol_table():
     symbol_table = Trie()
     symbol_table.put("a", 8)
     symbol_table.put("sea", 2)
@@ -19,7 +19,7 @@ def fill_symbol_table():
 
 class TestsTrie(TestCase):
     def test_put(self):
-        symbol_table = fill_symbol_table()
+        symbol_table = init_symbol_table()
 
         expected = 8
         actual = symbol_table.get("a")
@@ -54,7 +54,7 @@ class TestsTrie(TestCase):
         self.assertEqual(expected, actual)
 
     def test_get(self):
-        symbol_table = fill_symbol_table()
+        symbol_table = init_symbol_table()
 
         expected = 8
         actual = symbol_table.get("a")
@@ -93,7 +93,7 @@ class TestsTrie(TestCase):
         self.assertIsNone(actual)
 
     def test_delete(self):
-        symbol_table = fill_symbol_table()
+        symbol_table = init_symbol_table()
 
         symbol_table.delete("a")
         actual = symbol_table.get("a")
@@ -119,7 +119,7 @@ class TestsTrie(TestCase):
         self.assertEqual(expected, actual)
 
     def test_clear(self):
-        symbol_table = fill_symbol_table()
+        symbol_table = init_symbol_table()
 
         actual = symbol_table.is_empty()
         self.assertFalse(actual)
@@ -129,7 +129,7 @@ class TestsTrie(TestCase):
         self.assertTrue(actual)
 
     def test_is_empty(self):
-        symbol_table = fill_symbol_table()
+        symbol_table = init_symbol_table()
 
         actual = symbol_table.is_empty()
         self.assertFalse(actual)
@@ -143,7 +143,7 @@ class TestsTrie(TestCase):
         self.assertFalse(actual)
 
     def test_get_size(self):
-        symbol_table = fill_symbol_table()
+        symbol_table = init_symbol_table()
 
         expected = 8
         actual = symbol_table.get_size()

@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6be1f661-4a20-4536-b817-dfc33733f48d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tries/test_ternary_trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tries/test_ternary_trie.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/tries/test_trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tries/test_trie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tries/trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tries/trie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tries/ternary_trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tries/ternary_trie.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_trie.TestsTrie">
+  <component name="RunManager" selected="Python tests.Unittests in test_ternary_trie.py">
     <configuration name="Unittests for test_trie.TestsTrie" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,6 +103,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_ternary_trie.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="libalgopy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/tries/test_ternary_trie.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in test_trie.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,27 +131,13 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="libalgopy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_ternary_trie.py" />
         <item itemvalue="Python tests.Unittests for test_trie.TestsTrie" />
         <item itemvalue="Python tests.Unittests for test_trie.TestsTrie.test_put" />
         <item itemvalue="Python tests.Unittests in test_trie.py" />
         <item itemvalue="Python tests.Unittests for test_trie.TestsTrie.test_get" />
-        <item itemvalue="Python tests.Unittests in tests" />
       </list>
     </recent_temporary>
   </component>
