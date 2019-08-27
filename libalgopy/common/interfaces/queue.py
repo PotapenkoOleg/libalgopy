@@ -1,4 +1,4 @@
-class Queue():
+class QueueBase:
     def enqueue(self, item):
         pass
 

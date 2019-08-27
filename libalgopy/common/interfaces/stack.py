@@ -1,4 +1,4 @@
-class Stack():
+class StackBase:
     def pop(self):
         pass
 
