@@ -94,9 +94,6 @@ class TernaryTrie(SymbolTable):
     def get_keys_with_prefix(self, prefix):
         raise NotImplementedError
 
-    def wildcard_match(self, key):
-        raise NotImplementedError
-
     def longest_prefix_of(self, prefix):
         raise NotImplementedError
 
@@ -172,6 +169,9 @@ class TernaryTrie(SymbolTable):
             parent.middle = None
         if parent.right == child:
             parent.right = None
+
+    def __collect(self, node, prefix, queue):
+        pass
     # endregion
 
 

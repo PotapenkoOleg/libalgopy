@@ -72,9 +72,6 @@ class Trie(SymbolTable):
     def get_keys_with_prefix(self, prefix):
         raise NotImplementedError
 
-    def wildcard_match(self, key):
-        raise NotImplementedError
-
     def longest_prefix_of(self, prefix):
         raise NotImplementedError
 
