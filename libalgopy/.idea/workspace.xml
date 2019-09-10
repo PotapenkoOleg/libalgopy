@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6be1f661-4a20-4536-b817-dfc33733f48d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/queues/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/queues/test_array_queue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/queues/test_linked_list_queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queues/array_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/queues/array_queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queues/linked_list_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/queues/linked_list_queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/queues/test_array_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/queues/test_array_queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/queues/test_linked_list_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/queues/test_linked_list_queue.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,18 +59,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in tests">
-    <configuration name="Unittests for stacks.stacks_tests.test_linked_list_stack.TestsLinkedListStack" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for test_linked_list_queue.TestsLinkedListQueue">
+    <configuration name="Unittests for test_array_queue.TestsArrayQueue" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stacks" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/queues" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;stacks.stacks_tests.test_linked_list_stack.TestsLinkedListStack&quot;" />
+      <option name="_new_target" value="&quot;test_array_queue.TestsArrayQueue&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -90,45 +88,17 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_array_stack.TestsArrayStack.test_peek" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_linked_list_queue.TestsLinkedListQueue" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/stacks" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/queues" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_array_stack.TestsArrayStack.test_peek&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_array_stack.TestsArrayStack.test_str" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="libalgopy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/stacks" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_array_stack.TestsArrayStack.test_str&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for tests.stacks.test_linked_list_stack.TestsLinkedListStack" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="libalgopy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/stacks_tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.stacks.test_linked_list_stack.TestsLinkedListStack&quot;" />
+      <option name="_new_target" value="&quot;test_linked_list_queue.TestsLinkedListQueue&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -162,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for test_linked_list_queue.TestsLinkedListQueue" />
+        <item itemvalue="Python tests.Unittests for test_array_queue.TestsArrayQueue" />
         <item itemvalue="Python tests.Unittests in tests" />
         <item itemvalue="Python tests.Unittests in stacks" />
         <item itemvalue="Python tests.Unittests for test_array_stack.TestsArrayStack" />
-        <item itemvalue="Python tests.Unittests for test_array_stack.TestsArrayStack.test_str" />
-        <item itemvalue="Python tests.Unittests for test_array_stack.TestsArrayStack.test_peek" />
       </list>
     </recent_temporary>
   </component>
