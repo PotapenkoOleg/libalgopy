@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6be1f661-4a20-4536-b817-dfc33733f48d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tries/test_ternary_trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tries/test_ternary_trie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tries/test_trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tries/test_trie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tries/ternary_trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tries/ternary_trie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tries/trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tries/trie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tries/ternary_trie/test_ternary_trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tries/ternary_trie/test_ternary_trie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tries/ternary_trie/ternary_trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tries/ternary_trie/ternary_trie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tries/trie/trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tries/trie/trie.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,27 +60,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_ternary_trie.TestsTernaryTrie">
-    <configuration name="Unittests for test_ternary_trie.TestsTernaryTrie" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="libalgopy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_ternary_trie.TestsTernaryTrie&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in test_trie.py">
     <configuration name="Unittests for test_trie.TestsTrie" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries/trie" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -90,55 +75,69 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in stacks" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_trie.TestsTrie.test_get_all_keys" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/stacks" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries/trie" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/stacks&quot;" />
+      <option name="_new_target" value="&quot;test_trie.TestsTrie.test_get_all_keys&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_trie.TestsTrie.test_longest_prefix_of" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="libalgopy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries/trie" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_trie.TestsTrie.test_longest_prefix_of&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_ternary_trie.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="libalgopy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries/ternary_trie" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/tries/ternary_trie/test_ternary_trie.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_trie.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries/trie" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in tries" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="libalgopy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/tries&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/tries/trie/test_trie.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test_ternary_trie.TestsTernaryTrie" />
+        <item itemvalue="Python tests.Unittests in test_trie.py" />
+        <item itemvalue="Python tests.Unittests for test_trie.TestsTrie.test_longest_prefix_of" />
         <item itemvalue="Python tests.Unittests for test_trie.TestsTrie" />
-        <item itemvalue="Python tests.Unittests in stacks" />
-        <item itemvalue="Python tests.Unittests in tries" />
-        <item itemvalue="Python tests.Unittests in tests" />
+        <item itemvalue="Python tests.Unittests for test_trie.TestsTrie.test_get_all_keys" />
+        <item itemvalue="Python tests.Unittests in test_ternary_trie.py" />
       </list>
     </recent_temporary>
   </component>
@@ -175,19 +174,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/stacks/test_linked_list_stack.py</url>
-          <line>119</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/tries/ternary_trie/ternary_trie.py</url>
+          <line>107</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/stacks/test_array_stack.py</url>
-          <line>114</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/tries/test_trie.py</url>
-          <line>21</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/tests/tries/trie/test_trie.py</url>
+          <line>226</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

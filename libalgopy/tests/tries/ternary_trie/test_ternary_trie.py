@@ -253,9 +253,8 @@ class TestsTernaryTrie(TestCase):
         actual = symbol_table.longest_prefix_of("a")
         self.assertEqual(expected, actual)
 
-        expected = ""
         actual = symbol_table.longest_prefix_of("Invalid")
-        self.assertEqual(expected, actual)
+        self.assertIsNone(actual)
 
         symbol_table.clear()
 
