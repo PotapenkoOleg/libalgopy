@@ -6,7 +6,7 @@ class Trie(SymbolTable):
 
     # region Node Class
 
-    class Node:
+    class TrieNode:
         def __init__(self, number_of_letters):
             self.__value = None
             self.__nextLevel = [None for i in range(number_of_letters)]
@@ -34,7 +34,7 @@ class Trie(SymbolTable):
 
     def __init__(self, number_of_letters=NUMBER_OF_LETTERS_IN_EXTENDED_ASCII):
         self.__number_of_letters = number_of_letters
-        self.__root = Trie.Node(number_of_letters)
+        self.__root = Trie.TrieNode(number_of_letters)
         self.__size = 0
 
     # endregion
@@ -57,7 +57,7 @@ class Trie(SymbolTable):
         return self.__get(key) is not None
 
     def clear(self):
-        self.__root = Trie.Node(Trie.NUMBER_OF_LETTERS_IN_EXTENDED_ASCII)
+        self.__root = Trie.TrieNode(Trie.NUMBER_OF_LETTERS_IN_EXTENDED_ASCII)
         self.__size = 0
 
     def is_empty(self):
@@ -67,16 +67,21 @@ class Trie(SymbolTable):
         return self.__size
 
     def get_all_keys(self):
-        raise NotImplementedError
+        queue = []
+        self.__collect(self.__root, "", queue)
+        return queue
 
     def get_keys_with_prefix(self, prefix):
-        raise NotImplementedError
-
-    def wildcard_match(self, key):
-        raise NotImplementedError
+        sub_tree = self.__get(self.__root, prefix, 0)
+        if sub_tree is None:
+            return None
+        queue = []  # we don't use queue class here since python list implements queue
+        self.__collect(sub_tree, prefix, queue)
+        return queue
 
     def longest_prefix_of(self, prefix):
-        raise NotImplementedError
+        prefix_length = self.__search(self.__root, prefix, 0, 0)
+        return prefix[0: prefix_length]
 
     # endregion
 
@@ -93,7 +98,7 @@ class Trie(SymbolTable):
 
     def __put(self, node, key, value, level_counter):
         if node is None:
-            node = Trie.Node(self.__number_of_letters)
+            node = Trie.TrieNode(self.__number_of_letters)
         if level_counter == len(key):
             if node.value is None:
                 self.__size += 1
@@ -121,6 +126,26 @@ class Trie(SymbolTable):
 
     def __is_level_empty(self, level):
         return all(current is None for current in level.get_next_level())
+
+    def __collect(self, node, prefix, queue):
+        if node is None:
+            return
+        if node.value is not None:
+            queue.append(prefix)
+        for character in range(self.__number_of_letters - 1):
+            next_level = node.get_next_level()
+            self.__collect(next_level[character], prefix + chr(character), queue)
+
+    def __search(self, node, query, level_counter, prefix_length):
+        if node is None:
+            return prefix_length
+        if node.value is not None:
+            prefix_length = level_counter
+        if level_counter == len(query):
+            return prefix_length
+        character = query[level_counter]
+        next_level = node.get_next_level()
+        return self.__search(next_level[ord(character)], query, level_counter + 1, prefix_length)
 
     # endregion
 
