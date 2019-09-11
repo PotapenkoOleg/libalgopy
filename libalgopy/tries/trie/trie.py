@@ -67,7 +67,7 @@ class Trie(SymbolTable):
         return self.__size
 
     def get_all_keys(self):
-        queue = []
+        queue = []  # we don't use queue class here since python list implements queue
         self.__collect(self.__root, "", queue)
         return queue
 
