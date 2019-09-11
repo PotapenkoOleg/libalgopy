@@ -26,9 +26,6 @@ class SymbolTable:
     def get_keys_with_prefix(self, prefix):
         pass
 
-    def wildcard_match(self, key):
-        pass
-
     def longest_prefix_of(self, prefix):
         pass
 
