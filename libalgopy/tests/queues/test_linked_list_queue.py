@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from queues.linked_list_queue import LinkedListQueue
+from queues.linked_list_queue.linked_list_queue import LinkedListQueue
 
 
 class TestsLinkedListQueue(TestCase):

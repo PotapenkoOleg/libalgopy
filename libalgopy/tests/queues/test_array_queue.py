@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from queues.array_queue import ArrayQueue
+from queues.array_queue.array_queue import ArrayQueue
 
 
 class TestsArrayQueue(TestCase):
