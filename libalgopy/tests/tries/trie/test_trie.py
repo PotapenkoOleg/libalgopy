@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from tries.trie import Trie
+from tries.trie.trie import Trie
 
 
 def init_symbol_table():
