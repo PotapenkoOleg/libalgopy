@@ -190,13 +190,107 @@ class TestsTernaryTrie(TestCase):
         self.assertEqual(expected, actual)
 
     def test_get_all_keys(self):
-        self.fail()
+        symbol_table = init_symbol_table()
+        hash_map = {
+            "she": 0,
+            "sells": 0,
+            "shells": 0,
+            "by": 0,
+            "the": 0,
+            "sea": 0,
+            "shore": 0,
+            "a": 0
+        }
+        all_keys = symbol_table.get_all_keys()
+
+        expected = 8
+        actual = self.__check_keys(all_keys, hash_map)
+        self.assertEqual(expected, actual)
 
     def test_get_keys_with_prefix(self):
-        self.fail()
+        symbol_table = init_symbol_table()
+        hash_map = {
+            "she": 0,
+            "sells": 0,
+            "shells": 0,
+            "sea": 0,
+            "shore": 0
+        }
+        prefix = "s"
 
-    def test_wildcard_match(self):
-        self.fail()
+        all_keys = symbol_table.get_keys_with_prefix(prefix)
+
+        expected = 5
+        actual = self.__check_keys(all_keys, hash_map)
+        self.assertEqual(expected, actual)
+
+        hash_map = {
+            "she": 0,
+            "shells": 0,
+            "shore": 0
+        }
+        prefix = "sh"
+
+        all_keys = symbol_table.get_keys_with_prefix(prefix)
+
+        expected = 3
+        actual = self.__check_keys(all_keys, hash_map)
+        self.assertEqual(expected, actual)
+
+        prefix = "Invalid"
+
+        all_keys = symbol_table.get_keys_with_prefix(prefix)
+        self.assertIsNone(all_keys)
 
     def test_longest_prefix_of(self):
-        self.fail()
+        symbol_table = init_symbol_table()
+
+        expected = "shells"
+        actual = symbol_table.longest_prefix_of("shellsort")
+        self.assertEqual(expected, actual)
+
+        expected = "a"
+        actual = symbol_table.longest_prefix_of("a")
+        self.assertEqual(expected, actual)
+
+        actual = symbol_table.longest_prefix_of("Invalid")
+        self.assertIsNone(actual)
+
+        symbol_table.clear()
+
+        symbol_table.put("128", 0)
+        symbol_table.put("128.112.055", 0)
+        symbol_table.put("128.112.055.015", 0)
+        symbol_table.put("128.112.136", 0)
+        symbol_table.put("128.112.155.011", 0)
+        symbol_table.put("128.112.155.013", 0)
+        symbol_table.put("128.112", 0)
+        symbol_table.put("128.222", 0)
+        symbol_table.put("128.222.136", 0)
+
+        expected = "128.112.136"
+        actual = symbol_table.longest_prefix_of("128.112.136.011")
+        self.assertEqual(expected, actual)
+
+        expected = "128.112"
+        actual = symbol_table.longest_prefix_of("128.112.100.016")
+        self.assertEqual(expected, actual)
+
+        expected = "128"
+        actual = symbol_table.longest_prefix_of("128.166.123.045")
+        self.assertEqual(expected, actual)
+
+        symbol_table.clear()
+        symbol_table.put("a", 0)
+        expected = "a"
+        actual = symbol_table.longest_prefix_of("a")
+        self.assertEqual(expected, actual)
+
+    def __check_keys(self, all_keys, hash_map):
+        number_of_items = 0
+        for key in all_keys:
+            number_of_items += 1
+            value = hash_map[key]
+            if value is None:
+                self.fail("Invalid key")
+        return number_of_items

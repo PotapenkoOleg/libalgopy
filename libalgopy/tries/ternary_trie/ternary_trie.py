@@ -4,7 +4,7 @@ from common.interfaces.symbol_table import SymbolTable
 class TernaryTrie(SymbolTable):
     # region Node Class
 
-    class Node:
+    class TernaryTrieNode:
         def __init__(self, character):
             self.__character = character
             self.__value = None
@@ -89,16 +89,24 @@ class TernaryTrie(SymbolTable):
         return self.__size
 
     def get_all_keys(self):
-        raise NotImplementedError
+        queue = []  # we don't use queue class here since python list implements queue
+        self.__collect(self.__root, "", queue)
+        return queue
 
     def get_keys_with_prefix(self, prefix):
-        raise NotImplementedError
-
-    def wildcard_match(self, key):
-        raise NotImplementedError
+        sub_tree = self.__get(self.__root, prefix, 0)
+        if sub_tree is None:
+            return None
+        queue = []  # we don't use queue class here since python list implements queue
+        self.__collect(sub_tree.middle, prefix, queue)
+        return queue
 
     def longest_prefix_of(self, prefix):
-        raise NotImplementedError
+        prefix_length = self.__search(self.__root, prefix, 0, -1)
+        if prefix_length == -1:
+            return None  # prefix not found
+        result = prefix[0:prefix_length + 1]
+        return result
 
     # endregion
 
@@ -107,7 +115,7 @@ class TernaryTrie(SymbolTable):
     def __put(self, node, key, value, level_counter):
         character = key[level_counter]
         if node is None:
-            node = TernaryTrie.Node(character)
+            node = TernaryTrie.TernaryTrieNode(character)
         if character < node.character:
             node.left = self.__put(node.left, key, value, level_counter)
         elif character > node.character:
@@ -129,7 +137,7 @@ class TernaryTrie(SymbolTable):
         elif character > node.character:
             return self.__get(node.right, key, level_counter)
         elif level_counter < (len(key) - 1):
-            return self.__get(node.middle, key, level_counter + 1);
+            return self.__get(node.middle, key, level_counter + 1)
         else:
             return node
 
@@ -172,6 +180,30 @@ class TernaryTrie(SymbolTable):
             parent.middle = None
         if parent.right == child:
             parent.right = None
+
+    def __collect(self, node, prefix, queue):
+        if node is None:
+            return
+        self.__collect(node.left, prefix, queue)
+        character = node.character
+        if node.value is not None:
+            queue.append(prefix + character)
+        self.__collect(node.middle, prefix + character, queue)
+        self.__collect(node.right, prefix, queue)
+
+    def __search(self, node, query, level_counter, prefix_length):
+        if node is None:
+            return prefix_length
+        character = query[level_counter]
+        if character < node.character:
+            return self.__search(node.left, query, level_counter, prefix_length)
+        elif character > node.character:
+            return self.__search(node.right, query, level_counter, prefix_length)
+        else:
+            if node.value is not None:
+                prefix_length = level_counter
+            return self.__search(node.middle, query, level_counter + 1, prefix_length)
+
     # endregion
 
 
