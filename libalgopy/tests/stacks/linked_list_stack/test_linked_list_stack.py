@@ -1,9 +1,9 @@
 from unittest import TestCase
 
-from stacks.array_stack import ArrayStack
+from stacks.linked_list_stack.linked_list_stack import LinkedListStack
 
 
-class TestsArrayStack(TestCase):
+class TestsLinkedListStack(TestCase):
     @classmethod
     def setUpClass(cls):
         pass
@@ -13,7 +13,7 @@ class TestsArrayStack(TestCase):
         pass
 
     def test_pop(self):
-        stack = ArrayStack()
+        stack = LinkedListStack()
 
         self.assertIsNone(stack.pop())
         expected = 42
@@ -31,7 +31,7 @@ class TestsArrayStack(TestCase):
         self.assertEqual(expected + 2, actual)
 
     def test_push(self):
-        stack = ArrayStack()
+        stack = LinkedListStack()
         expected = 42
         stack.push(expected)
         stack.push(expected + 1)
@@ -39,7 +39,7 @@ class TestsArrayStack(TestCase):
         self.assertEqual(expected + 1, actual)
 
     def test_peek(self):
-        stack = ArrayStack()
+        stack = LinkedListStack()
         self.assertIsNone(stack.peek())
 
         expected = 42
@@ -58,7 +58,7 @@ class TestsArrayStack(TestCase):
         self.assertEqual(expected, actual)
 
     def test_clear(self):
-        stack = ArrayStack()
+        stack = LinkedListStack()
         self.assertTrue(stack.is_empty())
 
         expected = 42
@@ -76,7 +76,7 @@ class TestsArrayStack(TestCase):
         self.assertIsNone(stack.pop())
 
     def test_is_empty(self):
-        stack = ArrayStack()
+        stack = LinkedListStack()
         actual = stack.is_empty()
         self.assertTrue(actual)
 
@@ -85,7 +85,7 @@ class TestsArrayStack(TestCase):
         self.assertFalse(actual)
 
     def test_get_size(self):
-        stack = ArrayStack()
+        stack = LinkedListStack()
         expected = 0
         actual = stack.get_size()
         self.assertEqual(expected, actual)
@@ -100,7 +100,7 @@ class TestsArrayStack(TestCase):
         self.assertEqual(expected, actual)
 
     def test_iterator(self):
-        stack = ArrayStack()
+        stack = LinkedListStack()
         expected = 42
         stack.push(expected)
         stack.push(expected + 1)
@@ -112,10 +112,10 @@ class TestsArrayStack(TestCase):
         self.assertEqual(expected, actual2)
 
     def test_str(self):
-        stack = ArrayStack()
+        stack = LinkedListStack()
         stack.push(42)
         stack.push(43)
         stack.push(44)
-        expected = "44\n43\n42"
+        expected = "44\n43\n42\n"
         actual = str(stack)
         self.assertEqual(expected, actual)
