@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6be1f661-4a20-4536-b817-dfc33733f48d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tries/ternary_trie/test_ternary_trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tries/ternary_trie/test_ternary_trie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tries/ternary_trie/ternary_trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tries/ternary_trie/ternary_trie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tries/trie/trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/tries/trie/trie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heaps/array_binary_heap.py" beforeDir="false" afterPath="$PROJECT_DIR$/heaps/array_binary_heap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/heaps/test_array_binary_heap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/heaps/test_array_binary_heap.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,11 +40,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\libalgopy\libalgopy\tests\tries" />
-      <recent name="D:\libalgopy\libalgopy\tries" />
-      <recent name="D:\libalgopy\libalgopy" />
+      <recent name="D:\libalgopy\libalgopy\tests\heaps" />
       <recent name="D:\libalgopy\libalgopy\tests\stacks" />
       <recent name="D:\libalgopy\libalgopy\tests" />
+      <recent name="D:\libalgopy\libalgopy" />
+      <recent name="D:\libalgopy\libalgopy\stacks\stacks_tests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -60,84 +59,84 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_trie.py">
-    <configuration name="Unittests for test_trie.TestsTrie" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for test_array_binary_heap.TestsArrayBinaryHeap">
+    <configuration name="Unittests for test_array_binary_heap.TestsArrayBinaryHeap" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries/trie" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/heaps" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_trie.TestsTrie&quot;" />
+      <option name="_new_target" value="&quot;test_array_binary_heap.TestsArrayBinaryHeap&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_trie.TestsTrie.test_get_all_keys" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_array_binary_heap.TestsArrayBinaryHeap.test_clear" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries/trie" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/heaps" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_trie.TestsTrie.test_get_all_keys&quot;" />
+      <option name="_new_target" value="&quot;test_array_binary_heap.TestsArrayBinaryHeap.test_clear&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_trie.TestsTrie.test_longest_prefix_of" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_array_binary_heap.TestsArrayBinaryHeap.test_insert" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries/trie" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/heaps" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_trie.TestsTrie.test_longest_prefix_of&quot;" />
+      <option name="_new_target" value="&quot;test_array_binary_heap.TestsArrayBinaryHeap.test_insert&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_ternary_trie.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_array_binary_heap.TestsArrayBinaryHeap.test_peek" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries/ternary_trie" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/heaps" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/tries/ternary_trie/test_ternary_trie.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_array_binary_heap.TestsArrayBinaryHeap.test_peek&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_trie.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_array_binary_heap.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="libalgopy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tries/trie" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/heaps" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/tries/trie/test_trie.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/heaps/test_array_binary_heap.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_trie.py" />
-        <item itemvalue="Python tests.Unittests for test_trie.TestsTrie.test_longest_prefix_of" />
-        <item itemvalue="Python tests.Unittests for test_trie.TestsTrie" />
-        <item itemvalue="Python tests.Unittests for test_trie.TestsTrie.test_get_all_keys" />
-        <item itemvalue="Python tests.Unittests in test_ternary_trie.py" />
+        <item itemvalue="Python tests.Unittests for test_array_binary_heap.TestsArrayBinaryHeap" />
+        <item itemvalue="Python tests.Unittests for test_array_binary_heap.TestsArrayBinaryHeap.test_insert" />
+        <item itemvalue="Python tests.Unittests in test_array_binary_heap.py" />
+        <item itemvalue="Python tests.Unittests for test_array_binary_heap.TestsArrayBinaryHeap.test_peek" />
+        <item itemvalue="Python tests.Unittests for test_array_binary_heap.TestsArrayBinaryHeap.test_clear" />
       </list>
     </recent_temporary>
   </component>
@@ -174,14 +173,34 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tries/ternary_trie/ternary_trie.py</url>
-          <line>107</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/tests/stacks/test_linked_list_stack.py</url>
+          <line>119</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/tries/trie/test_trie.py</url>
-          <line>226</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/tests/stacks/test_array_stack.py</url>
+          <line>114</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/heaps/test_array_binary_heap.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/heaps/test_array_binary_heap.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/heaps/test_array_binary_heap.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/heaps/test_array_binary_heap.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
