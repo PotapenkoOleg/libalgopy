@@ -8,10 +8,10 @@ class PriorityQueueBase:
     def peek(self):
         pass
 
-    def isEmpty(self):
+    def is_empty(self):
         pass
 
-    def getSize(self):
+    def get_size(self):
         pass
 
     def clear(self):
